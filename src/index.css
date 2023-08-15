@@ -1,13 +1,87 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.job-type-selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-type-selector {
+  text-align: center;
+  padding: 20px;
+}
+
+.freelance-job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section p {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.section input,
+.section textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.min-max-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.min-max-inputs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.post-button {
+  display: flex;
+  justify-content: right;
+}
+
+.post-button button {
+  color: black;
+  background-color: #ccc;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
